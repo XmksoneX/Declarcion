@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El jardín ✦</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="garden-page">
+  <audio id="audio" src="sound/Stars.mp3" preload="auto"></audio>
+  <div class="sky" aria-hidden="true">
+    <div class="moon"><span></span></div>
+    <div class="stars" id="stars"></div>
+    <div class="shooting-stars" id="shootingStars"></div>
+  </div>
+  <div class="glow-haze"></div>
+  <div class="particles" id="particles"></div>
+
+  <button class="music-toggle" id="musicToggle" type="button" aria-label="Reproducir música">♫ <span>reproducir</span></button>
+  <a class="back-button" href="index.html">← volver</a>
+
+  <section class="message-layer" aria-live="polite">
+    <p class="message-kicker" id="messageKicker">para ti</p>
+    <div id="lyrics"></div>
+  </section>
+
+  <h1 class="titulo"> Bienvenda y ponte comoda.</h1>
+
+  <div class="flowers">
+    <div class="flower flower--1">
+      <div class="flower__leafs flower__leafs--1">
+        <div class="flower__leaf flower__leaf--1"></div><div class="flower__leaf flower__leaf--2"></div><div class="flower__leaf flower__leaf--3"></div><div class="flower__leaf flower__leaf--4"></div>
+        <div class="flower__white-circle"></div>
+        <div class="flower__light flower__light--1"></div><div class="flower__light flower__light--2"></div><div class="flower__light flower__light--3"></div><div class="flower__light flower__light--4"></div><div class="flower__light flower__light--5"></div><div class="flower__light flower__light--6"></div><div class="flower__light flower__light--7"></div><div class="flower__light flower__light--8"></div>
+      </div>
+      <div class="flower__line"><div class="flower__line__leaf flower__line__leaf--1"></div><div class="flower__line__leaf flower__line__leaf--2"></div><div class="flower__line__leaf flower__line__leaf--3"></div><div class="flower__line__leaf flower__line__leaf--4"></div><div class="flower__line__leaf flower__line__leaf--5"></div><div class="flower__line__leaf flower__line__leaf--6"></div></div>
+    </div>
+    <div class="flower flower--2">
+      <div class="flower__leafs flower__leafs--2">
+        <div class="flower__leaf flower__leaf--1"></div><div class="flower__leaf flower__leaf--2"></div><div class="flower__leaf flower__leaf--3"></div><div class="flower__leaf flower__leaf--4"></div><div class="flower__white-circle"></div>
+        <div class="flower__light flower__light--1"></div><div class="flower__light flower__light--2"></div><div class="flower__light flower__light--3"></div><div class="flower__light flower__light--4"></div><div class="flower__light flower__light--5"></div><div class="flower__light flower__light--6"></div><div class="flower__light flower__light--7"></div><div class="flower__light flower__light--8"></div>
+      </div>
+      <div class="flower__line"><div class="flower__line__leaf flower__line__leaf--1"></div><div class="flower__line__leaf flower__line__leaf--2"></div><div class="flower__line__leaf flower__line__leaf--3"></div><div class="flower__line__leaf flower__line__leaf--4"></div></div>
+    </div>
+    <div class="flower flower--3">
+      <div class="flower__leafs flower__leafs--3">
+        <div class="flower__leaf flower__leaf--1"></div><div class="flower__leaf flower__leaf--2"></div><div class="flower__leaf flower__leaf--3"></div><div class="flower__leaf flower__leaf--4"></div><div class="flower__white-circle"></div>
+        <div class="flower__light flower__light--1"></div><div class="flower__light flower__light--2"></div><div class="flower__light flower__light--3"></div><div class="flower__light flower__light--4"></div><div class="flower__light flower__light--5"></div><div class="flower__light flower__light--6"></div><div class="flower__light flower__light--7"></div><div class="flower__light flower__light--8"></div>
+      </div>
+      <div class="flower__line"><div class="flower__line__leaf flower__line__leaf--1"></div><div class="flower__line__leaf flower__line__leaf--2"></div><div class="flower__line__leaf flower__line__leaf--3"></div><div class="flower__line__leaf flower__line__leaf--4"></div></div>
+    </div>
+  </div>
+
+  <div class="ground"></div>
+  <div class="ending" id="ending"><span>¿Pensaste que ya había terminado?</span><strong>Todavía falta una cosa.</strong><button id="restart" type="button">volver a vivirlo ✦</button></div>
+  <div class="ending" id="ending"><span>Volver al inicio</span><button id="restart" type="button" href="index.html">volver al inicio ✦</button></div>
+  <script src="js/anim.js"></script>
+</body>
+</html>
