@@ -11,29 +11,33 @@
 
   // Texto principal 
   const messages = [
-    `Mi vida era puro ruido y desorden cuando apareciste. No hubo avisos ni señales previas: simplemente llegaste de la nada, cruzando en medio de mi propio caos, en un momento donde todo parecía fuera de lugar.`,
+    `Mi vida era puro ruido y desorden cuando apareciste. No hubo avisos ni señales previas: simplemente llegaste de la nada, cruzando en medio de mi propio caos.`,
 
-    `A veces me pregunto qué fuerza o casualidad te puso en mi camino, porque desde ese instante exacto, sin explicaciones lógicas ni promesas vacías, todo a mi alrededor empezó a mejorar.`, 
+    `En un momento donde todo parecía fuera de lugar, a veces me pregunto qué fuerza o casualidad te puso en mi camino, porque desde ese instante exacto. `,
 
-    `Tu presencia trajo una calma que no sabía que necesitaba; fuiste la certeza que le dio sentido a los días difíciles y el punto fijo donde por fin pude descansar. No fue magia, fue tu forma de estar, de mirar y de quedarte.`,
+    `Sin explicaciones lógicas ni promesas vacías, todo a mi alrededor empezó a mejorar.`, 
 
-    `No quiero guardarme más lo evidente ni dejar que el tiempo diluya lo que provocas en mí. Reconozco el impacto que has tenido en mi historia y quiero seguir caminando a tu lado. `, 
+    `Tu presencia trajo una calma que no sabía que necesitaba; fuiste la certeza que le dio sentido a los días difíciles y el punto fijo donde por fin pude descansar.`,
+
+    `No fue magia, fue tu forma de estar, de mirar y de quedarte. No quiero guardarme más lo evidente ni dejar que el tiempo diluya lo que provocas en mí.`,
+
+    `Reconozco el impacto que has tenido en mi historia y quiero seguir caminando a tu lado, construyendo sobre esta paz que trajiste a mi mundo.`, 
     
-    `construyendo sobre esta paz que trajiste a mi mundo. Hoy elijo decírtelo con absoluta firmeza: me gustas, quiero estar contigo y apostar de verdad por todo lo que somos cuando estamos juntos.`,
+    `Hoy elijo decírtelo con absoluta firmeza: me gustas, quiero estar contigo y apostar de verdad por todo lo que somos cuando estamos juntos.`,
 
-    `No escribo esto para adornar lo que siento, lo escribo porque guardármelo sería negar una verdad evidente: quiero estar a tu lado sin prisas pero sin dudas, descubrir lo que construimos cuando dejamos de fingir distancia y apostar por todo lo que provocas en mí.`, 
+    `No escribo esto para adornar lo que siento, lo escribo porque guardármelo sería negar una verdad evidente: quiero estar a tu lado sin prisas pero sin dudas.`,
+    
+    `Descubrir lo que construimos cuando dejamos de fingir distancia y apostar por todo lo que provocas en mí, si el amor tiene que empezar con un paso valiente.`, 
 
-    `Si el amor tiene que empezar con un paso valiente, que sea este: elijo estar contigo, sin reservas, con el pecho abierto y la certeza entera.`, 
+    `Que sea este: elijo estar contigo, sin reservas, con el pecho abierto y la certeza entera.`, 
 
     `la pregunta es si usted me deja ser parte de su vida, quiere ser parte de la mia ? (por si no la capto quiere ser mi novia ?)`,
 
-    `Si esta deacuerdo solo diga si si no de un tripe mortal hacia atras XD.`
-
-    
+    `Si esta deacuerdo solo diga si, si no de un tripe mortal hacia atras XD.`
   ];
 
   // 108 palabras por minuto: ritmo deliberadamente tranquilo para un texto romántico.
-  const READING_WPM = 108;
+  const READING_WPM = 120;
   const FIRST_MESSAGE_AT = 15;
   const GAP_BETWEEN_MESSAGES = 2.5;
   const FADE_IN = 1.8;
