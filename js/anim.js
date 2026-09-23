@@ -4,7 +4,6 @@
   const kicker = document.querySelector('#messageKicker');
   const toggle = document.querySelector('#musicToggle');
   const ending = document.querySelector('#ending');
-  const restart = document.querySelector('#restart');
   const stars = document.querySelector('#stars');
   const shooting = document.querySelector('#shootingStars');
   const particles = document.querySelector('#particles');
@@ -139,13 +138,6 @@
 
   audio.addEventListener('play', setPlayingState);
   audio.addEventListener('pause', setPlayingState);
-  function restartExperience() {
-    ending.classList.remove('show');
-    ending.setAttribute('aria-hidden', 'true');
-    audio.currentTime = 0;
-    audio.play().catch(() => {});
-  }
-
   audio.addEventListener('ended', () => {
     setPlayingState();
     setTimeout(() => {
@@ -153,8 +145,6 @@
       ending.setAttribute('aria-hidden', 'false');
     }, 700);
   });
-
-  restart.addEventListener('click', restartExperience);
 
   // El navegador suele bloquear autoplay: intentamos una vez y dejamos el botón listo.
   audio.play().catch(() => {});
