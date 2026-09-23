@@ -25,7 +25,9 @@
 
     `Si el amor tiene que empezar con un paso valiente, que sea este: elijo estar contigo, sin reservas, con el pecho abierto y la certeza entera.`, 
 
-    `la pregunta es si usted me deja ser parte de su vida, quiere ser parte de la mia ? (por si no la capto quiere ser mi novia ?)`
+    `la pregunta es si usted me deja ser parte de su vida, quiere ser parte de la mia ? (por si no la capto quiere ser mi novia ?)`,
+
+    `Si esta deacuerdo solo diga si si no de un tripe mortal hacia atras XD.`
 
     
   ];
