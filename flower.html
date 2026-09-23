@@ -52,9 +52,17 @@
   </div>
 
   <div class="ground"></div>
-  <div class="ending" id="ending"><span>¿Pensaste que ya había terminado?</span><strong>Todavía falta una cosa.</strong><button id="restart" type="button">volver a vivirlo ✦</button></div>
-  <div class="ending" id="ending"><span>Volver al inicio</span><button id="restart" type="button" href="index.html">volver al inicio ✦</button></div>
-  <div class="ending" id="ending"><span>Siguiente</span><button id="restart" type="button" href="index.html">siguiente ✦ </button></div>
+
+  <section class="ending" id="ending" aria-hidden="true">
+    <div class="ending-panel">
+      <span>¿Pensaste que ya había terminado?</span>
+      <strong>Todavía falta una cosa.</strong>
+      <div class="ending-actions">
+        <button id="restart" class="ending-button" type="button">volver a vivirlo ✦</button>
+        <a class="ending-button ending-button--primary" href="siguiente.html">siguiente ✦</a>
+      </div>
+    </div>
+  </section>
   <script src="js/anim.js"></script>
 </body>
 </html>

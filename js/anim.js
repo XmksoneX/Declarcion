@@ -107,12 +107,12 @@
       const lift = (1 - fadeIn) * 18 - (1 - fadeOut) * 8;
 
       lyrics.style.opacity = opacity.toFixed(3);
-      lyrics.style.transform = `translate(-50%, ${lift}px)`;
+      lyrics.style.transform = `translateY(${lift}px)`;
       lyrics.textContent = current.text;
       kicker.textContent = `✦ para ti · ${current.index + 1} / ${timeline.length}`;
     } else {
       lyrics.style.opacity = '0';
-      lyrics.style.transform = 'translate(-50%, 10px)';
+      lyrics.style.transform = 'translateY(10px)';
     }
   }
 
@@ -139,16 +139,22 @@
 
   audio.addEventListener('play', setPlayingState);
   audio.addEventListener('pause', setPlayingState);
-  audio.addEventListener('ended', () => {
-    setPlayingState();
-    setTimeout(() => ending.classList.add('show'), 700);
-  });
-
-  restart.addEventListener('click', () => {
+  function restartExperience() {
     ending.classList.remove('show');
+    ending.setAttribute('aria-hidden', 'true');
     audio.currentTime = 0;
     audio.play().catch(() => {});
+  }
+
+  audio.addEventListener('ended', () => {
+    setPlayingState();
+    setTimeout(() => {
+      ending.classList.add('show');
+      ending.setAttribute('aria-hidden', 'false');
+    }, 700);
   });
+
+  restart.addEventListener('click', restartExperience);
 
   // El navegador suele bloquear autoplay: intentamos una vez y dejamos el botón listo.
   audio.play().catch(() => {});
